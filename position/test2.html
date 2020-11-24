@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .food-slide {
+        width: 800px;
+        height: 308px;
+        border: 2px solid green;
+        margin: 0 auto;
+        padding: 10px;
+        position: relative;
+      }
+      img {
+        float: left;
+      }
+      .controls a {
+        background-color: #333;
+        color: white;
+        line-height: 50px;
+        text-align: center;
+        display: block;
+        padding: 5px;
+        position: absolute;
+        white-space: nowrap; /*공백을 기준으로 엔터 넣지 않기*/
+        top: calc(50% - 25px);
+      }
+      .prev {
+        right: 100%;
+      }
+      .next {
+        left: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="food-slide">
+      <img
+        src="https://postfiles.pstatic.net/20110907_83/sparcorace_1315357722949vpkHC_JPEG/%C6%C4%B4%DF_00005.jpg?type=w2"
+        alt=""
+      />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae
+        fuga accusamus distinctio et quibusdam quas itaque harum fugit tempore
+        dolores corrupti debitis atque quis praesentium, fugiat dolorem
+        recusandae voluptatibus laudantium?
+      </p>
+      <div class="controls">
+        <a href="" class="prev">Previous Project</a>
+        <a href="" class="next">Next Project</a>
+      </div>
+    </div>
+  </body>
+</html>
