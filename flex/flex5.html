@@ -7,17 +7,15 @@
     <style>
       .container {
         display: flex;
-        /* flex-direction: row-reverse; column, column-reverse,row(기본값),row-reverse */
-        flex-wrap: nowrap; /*wrap,wrap-reverse,nowrap(기본값)*/
+        border: 2px solid;
+        flex-wrap: wrap;
+        height: 400px;
+        align-content: space-around; /*stretch(기본값),flex-start,flex-end,center,space-between,space-around    교차정렬*/
       }
       .container div {
         width: 200px;
         height: 100px;
-        border: 4px dashed;
-        font-size: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        border: 3px dashed;
       }
       .container div:first-child {
         background-color: red;

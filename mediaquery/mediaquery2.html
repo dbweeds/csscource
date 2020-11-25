@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Open Sans";
+        background-color: #ecf0f1;
+      }
+      .wrapper {
+        max-width: 60rem;
+        width: 100%;
+        margin: 2rem auto;
+      }
+      .wrapper.flexbg {
+        display: flex;
+      }
+      .flexbg main {
+        background-color: white;
+        width: 60%;
+        padding: 1.618rem;
+        order: 2;
+      }
+      .flexbg .sidebar {
+        width: 20%;
+        padding: 1.618rem;
+      }
+      .flexbg .left {
+        order: 1;
+        background-color: #3498db;
+      }
+      .flexbg .right {
+        order: 3;
+        background-color: #34495e;
+      }
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          width: 100%;
+          order: 1;
+        }
+        .flexbg .sidebar {
+          width: 50%;
+        }
+        .flexbg .left {
+          order: 2;
+        }
+        .flexbg .right {
+          order: 3;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        .flexbg .sidebar {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper flexbg">
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tempore
+          natus eveniet vero tenetur sed, quidem illum voluptas iusto. Rem modi
+          vitae, perspiciatis accusantium maxime eos hic fugit nobis sequi!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+          beatae dolores modi, corporis eum dignissimos saepe officiis, soluta
+          pariatur fuga impedit enim sunt harum. Eius eum debitis perspiciatis
+          quo temporibus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tempore
+          natus eveniet vero tenetur sed, quidem illum voluptas iusto. Rem modi
+          vitae, perspiciatis accusantium maxime eos hic fugit nobis sequi!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ex
+          laudantium minus velit voluptatem deserunt vel omnis praesentium
+          placeat incidunt nam quia, a ipsum quod suscipit hic reiciendis iure.
+          Nihil?
+        </p>
+      </main>
+      <aside class="sidebar left">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </aside>
+      <aside class="sidebar right">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </aside>
+    </div>
+  </body>
+</html>
